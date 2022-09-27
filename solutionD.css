@@ -1,0 +1,262 @@
+*{ 
+    padding: 0px;
+    margin:0px;
+    text-decoration: none;
+    list-style:none;
+    box-sizing:border-box; 
+}
+body{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+nav{
+    background: #0082e6;
+    height: 80px; 
+    width: 100%;
+   position: fixed;
+}
+label.logo{ 
+    color: white;
+    font-size: 35px; 
+    line-height:80px;
+    padding: 0 100px;
+}
+nav ul{
+    float : right; 
+    margin-right: 20px;
+}
+nav ul li{ 
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{ 
+    color: white; 
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{ 
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{ 
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{ 
+    display: none;
+}
+@media (max-width: 952px) { 
+    label.logo{ 
+        font-size: 30px;
+        padding-left: 50px;
+    }
+  nav ul li a{ 
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){ 
+    .checkbtn{
+        display: block;
+
+    }
+    ul{ 
+        position:fixed;
+        height: 100%;
+        width: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition:all .5s;
+    }
+  nav ul li{
+    display: block;
+    margin : 50px 0; 
+    line-height: 30px;
+    text-decoration: none;
+  }
+  nav ul li a{ 
+    font-size: 20px;
+  }
+  a:hover, a.active{ 
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{ 
+    left: 0;
+  }
+}
+
+.div1{ 
+    background-color: rgb(235, 234, 234);
+    height: 16cm;
+}
+.div2{ 
+    display: inline-block;
+    padding-left: 2.5cm;
+    padding-top: 2cm;
+    width: 15cm;
+}
+.div3{ 
+    display: inline-block;
+    background: no-repeat;
+    background-size: cover ;
+    margin-left: 3cm;
+    margin-bottom: 0;
+    width: 12.5cm;
+    height: 13cm;
+}
+button { 
+    background-color: none;
+    height: 1cm;
+    width: 5cm;
+    font-size: 15px;
+    border-radius: 2px;
+    border-style: white;
+}
+button:hover{ 
+    background-color: #0082e6;
+    box-shadow: #3a3a3b 1px 1px 1px 1px;
+}
+.div5{ 
+    width: 14cm;
+    margin-left: 4cm;
+}
+.div6{
+    display: inline-block;
+    background:no-repeat;
+    background-size: cover ;
+    margin-left: 3cm;
+    margin-bottom: 0;
+    width: 13cm;
+    height: 10cm;
+}
+.img1{ 
+    width: 6cm;
+    height: 6cm;
+}
+
+.div11{ 
+    background: url(IMGP/IM6.png) no-repeat;
+    background-size: cover;
+    width: 18cm;
+    height: 15cm;
+    margin-left: 1cm;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius:35px ; 
+    display: inline-block;
+}
+.div12{
+    width: 20cm;
+    height: 12cm;
+    border: #0082e6 solid;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius:30px ; 
+
+}
+.div13{
+    display: inline-block;
+    
+}
+.table1{ 
+    padding-left: 1cm;
+    /* padding-bottom: 16cm; */
+}
+th{
+    padding-left: 1cm;
+    width: 5cm;
+    height: 1.6cm;
+    font-size: 17px;
+}
+.inputM{
+    width: 10cm;
+    height: 6cm;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ; 
+}
+.inputC{ 
+    width: 10cm;
+    height: 1.1cm;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ; 
+
+}
+
+.btn{ 
+    background: none;
+    padding: 10px;
+    color: #eceef4;
+    transition: width 0.4s;
+    background-color: #0082e6;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    width: 170px;
+}
+.btn:hover{ 
+    background-color:  #2260ff;
+    border-radius: 3px;
+    border-color: #0082e6;
+    box-shadow: 3px 2px #2c3e50 ;
+    width:200px ;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius:15px ;
+}
+input{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding: 9px;
+    font-size: 16px;
+    
+}
+.inputC{ 
+    border: solid 2px ;
+}
+
+input:hover{ 
+    border-color: #1b9bff;
+}
+.inputC:hover{ 
+    border-color: #1b9bff;
+}
+
+
+
+
+footer{ 
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #229bf8;
+    padding: 75px 0 20px;
+    border-top-left-radius: 120px;
+    font-size: 15px;
+    line-height:20px ;
+    color: white;
+    display: inline-block;
+}
+
+.logo{ 
+    width:300px ;
+    margin-bottom: 30px;
+
+}
+.col{ 
+    padding-left: 3cm;
+    display: inline-block;
+}
+.a1{ 
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+}
+.a1:hover{ 
+    color: #202056;
+}

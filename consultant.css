@@ -1,0 +1,63 @@
+ .div1{ 
+    /* border:2px solid black; */
+    width: auto;
+    height: auto;
+    align-items: center; 
+    margin-top: 2.5cm;
+    margin-right: 1.9cm;
+}     
+.div2 , .div3 , .div4{ 
+   display: inline-block;
+   box-shadow: 2px 3.4px 3.4px 2px rgb(211, 206, 206);
+   border-radius: 7px;
+   width:8cm;
+   height: 8cm;
+   margin-left: 1.5cm;
+}
+.div2{ 
+    background: url(./IMGC/IM1.gif) no-repeat;
+    background-size: cover ;
+    
+}
+.div3{ 
+    background: url(./IMGC/IM2.gif) no-repeat;
+    background-size: cover ;
+    
+}
+.div4{ 
+    background: url(./IMGC/IM3.gif) no-repeat;
+    background-size: cover ;
+    
+}
+.btn{ 
+    display: inline-block;
+}
+
+/* #abdo{
+    margin-left: 4.3cm;
+}
+#yassin{ 
+    margin-left: 4cm;
+} */
+table{ 
+    display: inline-block;
+}
+
+
+
+.btn1{
+    width:5cm;
+    height: 1.3cm;
+    font-size: 20px;
+    margin: 10px;
+    background-color: none;
+    color: #3498db;
+    transition: 0.8s;
+      }
+      .btn1:hover{ 
+      color: rgb(74, 72, 72);
+      background-color: #7cc0f3;
+      border: 1px;
+
+      }
+      

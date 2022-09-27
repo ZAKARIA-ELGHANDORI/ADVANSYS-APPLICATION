@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Accueil.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+
+    <title>ADVANSYS GROUP</title>
+</head>
+<body>
+<div>
+     <nav> 
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class='logo'><img src="IMG/logo.png" alt="" 
+         style="width: 6cm; height: 1.8cm; padding-top:6px ;"> </label>
+     <ul>
+        <li><a href="Accueil.html" class="active">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="solutions.html">Nos solutions</a></li>
+        <li><a href="ESPACE.php" class="settingA">Espace client</a> <br>
+          </li> <br> 
+          <div class="setting" style="height:2.4cm ;width: 4cm;">
+            <div style="height:1.2cm ;" class="settingD">S'identifier</div>
+            <div style="height:1.2cm ;" class="settingD">S'inscrire</div>
+          
+          
+           </div>
+     </ul>
+
+   </nav> <br><br> <br> 
+</div>
+   <div class="section"> 
+       <div id="div0"> Là où l'innovation <br><span style="color:rgb(238, 189, 232)">rencontre l'excellence !</span> 
+        <br> <a href="solutions.html" class="btn" style="font-size:26px ;"><span > En savoir plus</span></a>
+        </div>
+   </div> <br>
+
+
+   <div class="div1" style="border:rgb(236, 236, 236) 2px; border-style:solid">
+      <center><i id="i1" class='fas fa-user-shield' style='font-size:54px ; padding-top: 15px;'></i>
+        <br> <br><h3>Expertise Métier</h3> <br> <p style="color:rgba(54, 56, 56, 0.666) ;"> Des consultants certifiés et expérimentés pour déployer vos projets. <br> <br>  </p></center>
+   </div>
+   <div class="div1" style="border:rgb(236, 236, 236) 2px; border-style:solid">
+      <center><i class='fas fa-street-view' style='font-size:60px; padding-top: 15px;'></i>
+
+        <br> <br><h3>Proximité</h3> <br> <p style="color:rgba(54, 56, 56, 0.666) ;">Advansys Group vous garantit un service de qualité et une véritable relation de proximité. <br> <br> </p></center>
+   </div>
+   <div class="div1" id="div1" style="border:rgb(236, 236, 236) 2px; border-style:solid">
+      <center><i class='fas fa-edit' id="i1" style='font-size:58px; padding-top: 15px;'></i>
+        <br> <br><h3>Assistants & Support</h3> <br> <p style="color:rgba(54, 56, 56, 0.666) ;">La performances des solutions , le savoir-faire et la qualité de service Advansys Group sont la garantie de déploiement réussis.</p></center>
+   </div>
+   <!-- <iframe name="moniframe" width="100%" height="400" src="https://www.advansys.ma" frameborder="0" scrolling="yes">
+   </iframe> --> 
+     <div style="height:2cm ;"></div> <br>
+
+     <div class="div1" id="div2">
+         <!-- div image  -->
+      </div>
+        <div id="div3">
+         
+             <h2 style="color: rgb(131, 129, 129);">Advansys Group vous aide dans la
+               réalisation <br> de votre projet informatique</h2> <br>
+             <span style="color:rgb(2, 8, 92) ; font-size: 38px;">Nos Métiers</span> 
+              <!-- <button onclick="hideshowmetier()" id="btn1" class="btn1"><h3 style="font-size: x-large;">PLUS 
+               <i class="fa fa-arrow-down" style="font-size:36px"></i>
+               </h3></button> -->
+             <br>
+             <br>  
+             <button onclick="hideshowmetier1()"  class="div4">
+                <h2>Conseil et ingénierie <span class="S1" style="padding-left:11cm ;">
+                  <i class='fas fa-search-plus' style='font-size:20px'></i>   
+               </span>
+               </h2> 
+             </button>
+                  <div class="M1" style="display: none;">
+                     <p style="color: rgb(131, 129, 129);">Nos équipes vous accompagnent pour faire <br> de votre informatique un outil de création de valeur.</p>
+                  </div>
+                    <br> <br>
+             <button  onclick="hideshowmetier2()" class="div4">
+               <h2>Intégration Projets 
+                  <span class="S2" style="padding-left: 11.4cm ;">
+                     <i class='fas fa-search-plus' style='font-size:20px'></i>
+                  </span>
+                </h2>
+             </button>
+             <div class="M2" style="display: none;">
+               <p style="color: rgb(131, 129, 129);">On vous proposons des solutions utiles et <br> innovantes permettant de gérer et structurer votre entreprise.</p>
+            </div> 
+              <br> <br>
+            <button  onclick="hideshowmetier3()"  class="div4">
+               <h2>Formation IT
+                   <span class="S3" style="padding-left: 13cm ;">
+                     <i class='fas fa-search-plus' style='font-size:20px'></i> 
+                  </span> 
+               </h2>
+            </button>
+            <div class="M3" style="display: none;">
+               <p style="color: rgb(131, 129, 129);">Nos consultants interviennent en vous proposons <br> des formations sur mesure quel que soit votre solution.</p>
+            </div>
+            <br> <br>
+            <button onclick="hideshowmetier4()"  class="div4">
+               <h2>Assistance <span class="S4" style="padding-left: 13.5cm ;">
+                  <i class='fas fa-search-plus' style='font-size:20px'></i>
+               </span>
+              </h2>
+            </button>
+            <div class="M4" style="display: none;">
+               <p style="color: rgb(131, 129, 129);">Advansys Group vous propose une assistance <br> adaptée pour répondre à vos attentes et vous apporter des solutions optimales.</p>
+            </div>
+            <br> 
+           
+            <script src="Accueiljs.js"></script>
+   
+        </div>
+        
+
+      <div style="height:2cm ;"></div><br>
+       
+           <div id="div5">
+                <div><center><h1 style="color: white; padding-top:2cm">Notre mission est de révéler toute la valeur des 
+                  métiers de nos clients <br> en leur apportant des 
+                  solutions ERP utiles et innovantes.</h1></center></div>
+           </div>
+
+      <div style="height:3cm ;"></div><br>
+       <center><h1 style="font-size: 50px; color: #0082e6;">Nos solutions</h1></center>
+          <br>
+       <h3><center style="color: #6a6969;">Découvrez nos solutions utiles et innovantes, 
+         pensées pour votre métier, pour vous aider à saisir toutes 
+         les opportunités de rebond. <br> Assurez la continuité  de votre 
+         activité avec des solutions connectées, agiles et performantes.</center></h3>
+      
+       <div style="height:3cm ;"></div>
+
+       <div class="container">
+         <div class="div6"><img src="IMG/IM5.png" alt="" class="IMG"> <br><br> <h1>Cegid orli</h1> <br>
+          <div class="div7"> <p class="p1"> Cegid Orli s’adresse à toutes les marques
+             du secteur de la mode et textile Cet ERP gère toute la 
+             chaine : des prévisions de vente jusqu’à la livraison (sur le web ou en magasin), 
+           en passant par le sourcing, 
+           la production et son stockage en entrepôt. <br>
+           <a href="SolutionsD.php?sol=1" class="liensol">En savoir plus..</a>   
+         </div> </p>
+         </div>
+
+         <div class="div6"><img src="IMG/IM6.png" alt="" class="IMG"> <br><br> <h1>Cegid Retail</h1> <br>
+           <div class="div7"> <p class="p1">La plateforme de commerce unifié dédiée aux enseignes spécialisées et aux marques de luxe pour piloter vos activités retail omnicanales et délivrer une expérience shopping 
+              exceptionnelle – 
+              en toute agilité et partout dans le monde <br>
+              <a href="SolutionsD.php?sol=2" class="liensol">En savoir plus..</a>   </div></p>
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM7.png" alt="" class="IMG"> <br><br> <h1>Cegid XRP-Sprint</h1> <br>
+           <div class="div7"> <p class="p1">L’ERP de nouvelle génération simple, 
+              connecté et sûr pour répondre aux besoins d’agilité et d’adaptabilité des ETI, 
+              grandes entreprises et établissements publics. <br> <br> <br> 
+              <a href="SolutionsD.php?sol=3" class="liensol">En savoir plus..</a>   </div></p> 
+  
+        
+        
+         </div>
+        
+         <div class="div6"><img src="IMG/IM8.png" alt="" class="IMG"> <br><br> <h1>Cegid comptabilité & finance</h1> <br>
+           <div class="div7"> <p class="p1">  Cegid Flow combine vos données
+               comptables et bancaires pour vous alerter précisément 
+               sur votre situation financière, vos échéances, et vos prévisions de trésorerie.
+               Vous visualisez votre situation financière toujours à jour. <br>
+               <a href="SolutionsD.php?sol=4" class="liensol">En savoir plus..</a>   </div> </p>        
+
+        
+         </div>
+         
+         <div class="div6"><img src="IMG/IM9.png" alt="" class="IMG"> <br><br> <h1>Cegid paie & RH</h1> <br>
+           <div class="div7">  <p class="p1">  Optez pour des solutions 
+              simples, flexibles et rapides à mettre en place pour
+               dynamiser la gestion de la paie et des ressources humaines. <br> <br> <br> <br> <br> <br> 
+               <a href="SolutionsD.php?sol=5" class="liensol">En savoir plus..</a>   </div></p>       
+        
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM10.png" alt="" class="IMG"> <br><br> <h1>Cegid PME/PMI</h1> <br>
+           <div class="div7"><p class="p1"> Développer la souplesse de votre
+               organisation, adaptez facilement vos capacités opérationnelles 
+              et de gestion suivant les besoins de votre activité. <br> <br> <br> <br> <br> <br> 
+              <a href="SolutionsD.php?sol=6" class="liensol">En savoir plus..</a>   </div> </p>
+        
+        
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM11.png" alt="" class="IMG"> <br><br> <h1>GMAO</h1> <br>
+           <div class="div7"><p class="p1"> DIMO Maint est une gamme complète 
+              de solutions évolutives pour la fonction maintenance GMAO (Gestion 
+              de la maintenance assistée par Ordinateur) qui s’adaptent au périmètre et à
+               l’orientation que vous souhaitez donner à votre projet. <br>
+               <a href="SolutionsD.php?sol=7" class="liensol">En savoir plus..</a>   </div> </p>    
+        
+        
+        
+
+         </div>
+
+         <div class="div6"><img src="IMG/IM12.png" alt="" class="IMG"> <br><br> <h1>Docuware</h1> <br>
+           <div class="div7"><p class="p1">  est un outil 
+              intelligent de gestion électronique de documents et de workflows. 
+              Il s’agit de la meilleure alternative pour dématérialiser,
+               automatiser et révolutionner les processus métier. <br> <br> 
+               <a href="SolutionsD.php?sol=8" class="liensol">En savoir plus..</a>   </div></p>
+        
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM13.png" alt="" class="IMG"> <br><br> <h1>Mail in black</h1><br>
+           <div class="div7"><p class="p1">  Protégez votre 
+              organisation des nouvelles menaces informatiques et 
+              sécurisez vos emails avec une solution
+               innovante qui répond à vos besoins en cybersécurité. <br> <br> <br>  
+               <a href="SolutionsD.php?sol=9" class="liensol">En savoir plus..</a>   </div></p>           
+        
+        
+        
+        
+         </div>
+        
+         <div class="div6"><img src="IMG/IM14.png" alt="" class="IMG"> <br><br> <h1>Power BI</h1><br>
+           <div class="div7"><p class="p1">  Power BI est une suite d’outils permettant
+               d’analyser des données et de partager des informations. <br> <br> <br> <br> <br> <br> <br>
+               <a href="SolutionsD.php?sol=10" class="liensol">En savoir plus..</a>   </div> </p>
+        
+        
+        
+        
+         </div>
+         
+         <div class="div6"><img src="IMG/IM15.png" alt="" class="IMG"> <br><br> <h1>Solutions CRM</h1> <br>
+           <div class="div7"> <p class="p1"> Le CRM Orienté client par excellence
+              Dédié au service Marketing et Commerce, le logiciel
+               de gestion commerciale, Microsoft Dynamics 365 for Sales,
+                accroît le chiffre d’affaires de vos commerciaux 
+              grâce à une détection de besoins clients en temps réel. <br> <br><br>
+              <a href="SolutionsD.php?sol=11" class="liensol">En savoir plus..</a>    </div> </p> 
+        
+        
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM16.png" alt="" class="IMG"> <br><br> <h1>MES Qubes</h1> <br>
+           <div class="div7"> <p class="p1">   La solution MES Qubes permet 
+              à toutes les entreprises industrielles de piloter au plus près et suivre
+               en temps réel toutes les étapes de vos ordres de fabrication. <br> <br> <br> <br> <br>
+               <a href="SolutionsD.php?sol=12" class="liensol">En savoir plus..</a>   </div> </p> 
+        
+        
+        
+        
+         </div>
+
+         <div class="div6"><img src="IMG/IM17.png" alt="" class="IMG"> <br><br> <h1>XRP Flex</h1> <br>
+           <div class="div7">  <p class="p1"> Oubliez l’ERP, expérimentez la liberté !
+              Au service de votre efficacité opérationnelle. <br>
+              <a href="SolutionsD.php?sol=13" class="liensol">En savoir plus..</a>   </div></p>
+        
+        
+        
+        
+         </div>
+
+
+
+      </div>
+<!-- debut advansys en chiffre -->
+       <div style="height:3cm ;"></div>
+        
+       <h1><center style="font-size: 50px; color: #0082e6;"> Advansys en chiffre</center></h1>
+
+      <div class="container1">
+         <div class="div8">
+              <center><i class='fas fa-sync-alt' style='font-size:48px'></i>
+              <br> <br>
+              <h2>25 <br>
+              Ans d'expériences 
+              </h2> <br>
+              <p class="p1">une société et un ADN Marocain au service
+               de votre développement</p>
+              </center>
+         </div>
+              
+         <div class="div8">
+              <center><i class='fas fa-calendar-check' style='font-size:48px'></i>
+            <br><br>
+               <h2>200 <br>
+               Sites installés 
+               </h2>  <br>
+               <p class="p1">une écoute et une confiance mutuelle au quotidien</p>
+
+             </center>
+         </div>
+
+         <div class="div8">
+            <center><i class='fas fa-user-check' style='font-size:48px'></i></i>
+            <br><br>
+             <h2>95% <br>
+              Clients satisfaits
+             </h2> <br>
+             <p class="p1">des équipes dédiées à votre accompagnement.</p>
+
+            </center>
+         </div>
+
+
+      </div>
+
+<!-- fin advansys en chiffre -->
+
+       <div style="height:3cm ;"></div>
+
+ 
+
+       <center><h1 style="font-size: 50px; color: #0082e6;">Nos partenaires</h1></center>
+       <br>
+    <h3><center style="color: #a7a6a6; font-size: 20px;">Depuis sa création en 1997,
+       Advansys Group s’attache à nouer et à développer 
+       des partenariats forts avec <br> différents fournisseurs
+       de services et de solutions pour les entreprises, 
+       particuliers et administrations. <br> Ensemble, nous travaillons 
+      en synergie pour vous offrir les meilleurs services et produits.</center></h3>
+
+
+      <div style="height: 1.4cm ;"></div>
+         <div class="body">
+            <div style="padding-right: 4cm;">
+               <h1 style="color: #0082e6; font-size: 40px;">Il nous font confiance</h1> <br>
+               <h3 style="color: #a7a6a6; font-size: 20px;">Notre Objectif est de comprendre les enjeux de votre projet <br>
+                   et vous présenter la solution qui répondra à vos attentes.</h3>
+            </div>
+            <div class="slider">
+               <div class="images">
+                  <input type="radio" name="slide" id="im18">
+                  <input type="radio" name="slide" id="im19">
+                  <input type="radio" name="slide" id="im20">
+                  <input type="radio" name="slide" id="im21">
+                  <input type="radio" name="slide" id="im22">
+                  <input type="radio" name="slide" id="im23">
+                  <input type="radio" name="slide" id="im24">
+                  <input type="radio" name="slide" id="im25" checked>
+                  
+                  <img src="./IMG/IM19.png" alt="im18" class="im18">
+                  <img src="./IMG/IM18.png" alt="im19" class="im19">
+                  <img src="./IMG/IM20.png" alt="im20" class="im20">
+                  <img src="./IMG/IM21.png" alt="im21" class="im21">
+                  <img src="./IMG/IM22.png" alt="im22" class="im22">
+                  <img src="./IMG/IM23.png" alt="im23" class="im23">
+                  <img src="./IMG/IM24.png" alt="im24" class="im24">
+                  <img src="./IMG/IM25.png" alt="im25" class="im25">
+               </div>
+               <div class="dots">
+                  <label for="im18"></label>
+                  <label for="im19"></label>
+                  <label for="im20"> </label>
+                  <label for="im21"> </label>
+                  <label for="im22"> </label>
+                  <label for="im23"> </label>
+                  <label for="im24"> </label>
+                  <label for="im25"> </label>
+               </div>
+            </div>
+            
+         </div>
+
+      <div style="height:2.3cm ;"></div>
+
+      <div class="body1">
+         <div class="div9">
+            <h1 style="color: #0673c6; font-size: 30px;">Votre projet 
+               subventionné <br> à hauteur de 70%</h1> <br>
+
+               <p style="color: #a7a6a6; font-size: 16px;">Référencé chez MAROC PME et PME logis,
+                   Advansys Group vous <br> accompagne pour déposer votre dossier 
+                   afin de bénéficier <br> de subvention à hauteur de 70%,
+                    pour tout acquisition <br> de solutions de gestion. <br> <br>
+                  Notre objectif est de vous aider dans la réalisation de
+                   votre projet <br>
+                    informatique et de vous permettre d’avoir un réel
+                    outil qui vous <br> aide à digitaliser votre entreprise, 
+                  optimiser votre production, <br> et votre croissance.</p>
+
+                  <div class="IM27">
+
+                  </div>
+                  <div class="IM28">
+
+                  </div>
+         </div>
+          <div class="div10">
+
+          </div>
+
+
+      </div>
+      <div style="height:3cm ;"></div>
+
+   <footer>
+      <div class="row">
+         <div class="col">
+            <img src="IMG/logo.png" class="logo">
+            <p style="line-height: 28px;">Nous vous proposons des solutions de <br> gestion utiles et innovantes 
+               pour vous <br> aider à réaliser vos projets.</p> <br>
+            <p>  <i class='fas fa-map-marker-alt' style='font-size:24px'></i>
+               1, rue Arago, Quartier des hôpitaux <br>
+                Mers Sultan 20100 Casablanca.</p> <br>
+               <p> <i class='fas fa-paper-plane' style='font-size:24px'></i>
+                  contacts@advansys.ma</p> <br>
+               <p> <i class='fas fa-phone-square-alt' style='font-size:24px'></i>
+                  0522 863 000</p> 
+         </div>
+         <div class="col">
+            <h2>LIENS UTILES</h2>
+            <br> 
+            <p><a href="Accueil.html" class="a1">Accueil</a></p> <br> 
+            <p><a href="presentation.html" class="a1">Présentation</a></p> <br>
+            <p><a href="solutions.html" class="a1">Nos solutions</a></p> <br>
+            <p><a href="inscription.html" class="a1">Espace clients</a></p> <br> <br> <br> <br>
+         </div> 
+         <div class="col">
+            <h2>NEWSLETTER</h2>
+              <br>
+             <form action="">
+                <input type="email" style="height: 33px; width:4.5cm ; padding: 3px; border-radius: 5px;" placeholder=" Email">
+                <br> <br>
+                <button style="height: 33px; width:4.5cm ; padding: 3px; border-radius: 5px;
+                 background-color:#36367e ; color: white;">ENVOYER</button>
+             </form>
+             <br> <br> <br> <br> <br> <br> <br> 
+         </div>
+         <div class="col">
+            <h2>NOUS-JOINDRE</h2> <br>
+            <a href="https://www.linkedin.com/company/advansysgroupmaroc" class="a1"> 
+               <i class='fab fa-linkedin' style='font-size:36px'> linkedin</i> 
+                <br></a> <br>
+            <a href="https://www.facebook.com/profile.php?id=100070862046393" class="a1"> 
+               <i class='fab fa-facebook' style='font-size:36px'> facebook</i>
+                <br></a> <br>
+            <a href="https://www.instagram.com/advansys.group/" class="a1"> 
+               <i class='fab fa-instagram' style='font-size:36px'> instagram</i>
+                <br></a> <br>
+            <a href="https://www.youtube.com/channel/UChTutGAMNAFxSj63mmx8WMA" class="a1"> 
+               <i class='fab fa-youtube' style='font-size:36px'> youtube</i>
+                 <br></a> <br>
+            
+         </div>
+      </div>
+   </footer>
+</body>
+</html>

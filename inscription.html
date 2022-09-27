@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inscription.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>ESPACE CLIENT</title>
+</head>
+
+<body>
+    <div>
+        <nav> 
+           <input type="checkbox" id="check">
+           <label for="check" class="checkbtn">
+             <i class="fas fa-bars"></i>
+           </label>
+           <label class='logo'><img src="IMG/logo.png" alt="" 
+            style="width: 6cm; height: 1.8cm; padding-top:6px ;"> </label>
+        <ul>
+           <li><a href="Accueil.html" >Accueil</a></li>
+           <li><a href="presentation.html">Présentation</a></li>
+           <li><a href="solutions.html">Nos solutions</a></li>
+           <li><a href="ESPACE.php" class="active" >Espace client</a> <br>
+             </li> <br> 
+
+        </ul>
+   
+      </nav> <br><br> <br> 
+   </div>
+
+   <div class="div1">
+      <h1>S'inscrire</h1>
+   </div>
+
+   <div class="div2">
+    <br> 
+       <center>
+          <form action="inscription.php" method="post" id="myform">
+            <input onclick="clicknom()" type="text" placeholder="Nom d'utilisateur" name="nom" id="nom" > <br>
+            <input onclick="clickemail()" type="email" placeholder="Adresse email" name="email" id="email"> <br>
+            <input onclick="clicksociete()" type="text" placeholder="Société" name="societe" id="societe"> <br>
+            <input onclick="clickfonction()" type="text" placeholder="Fonction" name="fonction" id="fonction"> <br>
+            <input onclick="clicktelephone()" type="tel" placeholder="Téléphone" name="telephone" id="telephone"> <br>
+            <input onclick="clickpassword()" type="password" placeholder="Mot de passe" name="Password" id="password"> <br>
+            <input onclick="clickconfirmer()" type="password" placeholder="Confirmer le mot de passe" name="PasswordC" id="passwordC"> <br>
+            Vous-avez déja un compte ? <a href="login.php" class="a1">S'identifier</a> <br>
+            <span><input type="submit" value="S'inscrire" name="submit" class="btn" id="submit">
+                <a href="login.php"><input type="button" value="Se connecter" class="btn"></a></span>
+               
+
+          </form>
+          <script src="inscription.js"></script>
+
+
+       </center>
+   </div>
+
+    
+</body>
+</html>

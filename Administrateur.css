@@ -1,0 +1,24 @@
+.edit_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    background: #41c788;
+    color: white;
+    border-radius: 3px;
+}
+
+.del_btn {
+    text-decoration: none;
+    padding: 2px 5px;
+    color: white;
+    border-radius: 3px;
+    background: #cf3b3b;
+}
+a:hover{ 
+    color: rgb(42, 211, 211);
+}
+#SR{ 
+    background-color: rgb(42, 211, 211) ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
