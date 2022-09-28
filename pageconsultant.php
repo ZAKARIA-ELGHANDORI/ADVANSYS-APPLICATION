@@ -49,7 +49,7 @@ foreach ($countS as $row2){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pageadmin.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <title>PAGE ADMIN</title>
+    <title>PAGE CONSULTANT</title>
 </head>
 <body>
 <nav> 
@@ -76,6 +76,7 @@ foreach ($countS as $row2){
           <!-- </form>  -->
 
       </div>
+      <div style="height: 3cm"></div>
 
       <div class="div1">
         <div class="div2"> <h3><i id="I" class='fas fa-tasks' style='font-size:24pxpx;color:white'></i>
@@ -89,7 +90,7 @@ foreach ($countS as $row2){
          </div> -->
          <div id="yes">
        
-        <div class="div5" style="display: block;" id="divCont">
+        <!-- <div class="div5" style="display: block;" id="divCont">
         <div class="div3">
          <form action="pageadmin.php" method="post">
          <i class='fas fa-search' style='font-size:21px'></i>
@@ -128,9 +129,10 @@ foreach ($countS as $row2){
          <?php } ;?>
          </div>
          
-        </div>
+        </div> -->
+        
 
-        <span style="color: red; padding-left:1cm ;">Liste des billets de vos clients *</span> 
+       <center> <span style="color: red; padding-left:1cm ;">Liste des billets a traiter *</span> </center>
         <div class="div4">
           <table class="T1">
             <tr class="TR1">

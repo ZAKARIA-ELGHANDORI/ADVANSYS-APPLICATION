@@ -1,4 +1,8 @@
 <?php 
+// session_start();
+// if($_SESSION['utilisateur']){ 
+//   header('location:ticket.php');
+// }
 ?>
 
 <!DOCTYPE html>
@@ -80,8 +84,8 @@
     </style>
 </head>
 <body>
-
-    <div class="div1">
+  
+  <div class="div1">
       <span id="S1">Se connecter</span> <br> 
       <span id="S2"> Faciliter vos démarches et simplifier nos échanges !</span> <br>
       <span id="S3"> Besoin d’assistance technique ? des questions ? (Compte, factures, commandes,)

@@ -3,7 +3,7 @@ session_start();
 if($_SESSION['admin']){ 
   header('location:pageadmin.php');
   // unset($_SESSION['consultant']);
-  // unset($_SESSION['utilisateur']);
+  // unset($_SESSION['consultant']);
 }
 $_SESSION['admin']=$_POST['nom'];
 $_SESSION['password']=$_POST['Password'];
