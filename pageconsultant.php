@@ -6,7 +6,8 @@ $search=false ;
 if(!$consultant){ 
    header('location:loginconsultant.php');
 }
-$sql = "SELECT * FROM `billetconsultant` WHERE `consultant`='$_SESSION[consultant]' ";
+$sql = "SELECT * FROM `billetadmin` WHERE `consultant`='$_SESSION[consultant]'
+AND `etat`='En attente' ";
 //Recherche des données
 $sth = $cnx->query($sql);
 // On voudrait les résultats sous la forme d’un tableau associatif
@@ -14,19 +15,20 @@ $result = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 if (isset($_POST['submit']) AND !empty($_POST['search']) ) {
    $search=$_POST['search'];
-   $sql = "SELECT * FROM `billetconsultant` WHERE sujet Like '%$search%'";
+   $sql = "SELECT * FROM `billetadmin` WHERE sujet Like '%$search%'";
    $sth3 = $cnx->query($sql);
    $resultsearch = $sth3->fetchAll();
  
  }
 
- $sql1 = "SELECT COUNT(*) as nbrB FROM `billetconsultant` WHERE `consultant`='$_SESSION[consultant]'";
+ $sql1 = "SELECT COUNT(*) as nbrB FROM `billetadmin` WHERE `consultant`='$_SESSION[consultant]'
+ AND `etat`='En attente'";
 //Recherche des données
 $sth1 = $cnx->query($sql1);
 $count = $sth1->fetchAll();
 
 
-$sql2 = "SELECT COUNT(*) as nbrS FROM `billetconsultant` where sujet Like '%$search%'  AND `consultant`='$_SESSION[consultant]'";
+$sql2 = "SELECT COUNT(*) as nbrS FROM `billetadmin` where sujet Like '%$search%'  AND `consultant`='$_SESSION[consultant]'";
 //Recherche des données
 $sth2 = $cnx->query($sql2);
 $countS = $sth2->fetchAll();
@@ -39,6 +41,11 @@ foreach ($countS as $row2){
     
     } 
 
+
+
+
+    
+
 ?>
 
 <!DOCTYPE html>
@@ -50,6 +57,16 @@ foreach ($countS as $row2){
     <link rel="stylesheet" href="pageadmin.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>PAGE CONSULTANT</title>
+    <style>
+      #liencom:hover{
+      color: #ffff;
+     
+      }
+      #liencom{ 
+         background-color:none;
+         padding:2px;
+      }
+    </style>
 </head>
 <body>
 <nav> 
@@ -79,7 +96,7 @@ foreach ($countS as $row2){
       <div style="height: 3cm"></div>
 
       <div class="div1">
-        <div class="div2"> <h3><i id="I" class='fas fa-tasks' style='font-size:24pxpx;color:white'></i>
+        <div class="div2"> <h3><i class='far fa-caret-square-down' style='font-size:24px'></i>
             Espace billet <span style="float : right"><?php echo $consultant ?>
             <i class='fas fa-user-alt' style='font-size:25px'></i></span></h3>
         
@@ -131,8 +148,8 @@ foreach ($countS as $row2){
          
         </div> -->
         
-
-       <center> <span style="color: red; padding-left:1cm ;">Liste des billets a traiter *</span> </center>
+   
+       <center> <span style="color: red; padding-left:1cm ;"><h3>Liste des billets a traiter *</h3></span> </center>
         <div class="div4">
           <table class="T1">
             <tr class="TR1">
@@ -144,12 +161,35 @@ foreach ($countS as $row2){
             </tr>
             
          <?php foreach ($result as $row){ ?>
+<?php  
+   $sql3 = "SELECT COUNT(*) as nbrC FROM `commentaires` where `id`='$row[id]' AND `consultant`='$consultant' ";
+  //Recherche des données
+    $sth3 = $cnx->query($sql3);
+     $countC = $sth3->fetchAll();
+   
+   ?>
             <tr>
                 
                <th class="th1">#<?php echo $row['id'] ?></th>
                <th class="th1"><?php echo $row['sujet'] ?></th>
                <th class="th1"><?php echo $row['categorie'] ?></th>
-               <th class="th1"><?php echo $row['utilisateur'] ?></th> 
+               <th class="th1"><?php echo $row['utilisateur'] ?> <br>
+
+  <a id="liencom" href="commentaire.php?id=<?php echo $row['id'] ?>&utilisateur=<?php echo $row['utilisateur'] ?>&consultant=<?php echo $consultant ?>">
+  <?php foreach ($countC as $rowC){ ?>
+   <?php if($rowC['nbrC']==0){ ?>
+     Feedback <i id="etat1" class='fas fa-times' style='font-size:24px; color:red' ></i>
+    </a>
+     <?php } ?>
+     <?php if($rowC['nbrC']>0){ ?>
+     Feedback <i class='far fa-check-circle' style='font-size:24px; color:green'></i>
+    </a>
+     <?php } ?>
+
+      
+     
+     <?php } ?>
+               </th> 
             </tr>
          <?php } ?>
           </table>

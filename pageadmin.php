@@ -3,6 +3,7 @@ session_start();
 include('Connection.php');
 $admin=$_SESSION['admin'];
 $search=false ;
+$commentaire=true ;
 if(!$admin){ 
    header('location:loginadmin.php');
 }
@@ -11,6 +12,14 @@ $sql = "SELECT * FROM `billetadmin` ";
 $sth = $cnx->query($sql);
 // On voudrait les résultats sous la forme d’un tableau associatif
 $result = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+$sql3 = "SELECT * FROM `commentaires` ";
+//Recherche des données
+$sth3 = $cnx->query($sql3);
+// On voudrait les résultats sous la forme d’un tableau associatif
+$result3 = $sth3->fetchAll(PDO::FETCH_ASSOC);
+
+
 
 if (isset($_POST['submit']) AND !empty($_POST['search']) ) {
    $search=$_POST['search'];
@@ -32,12 +41,27 @@ $sth2 = $cnx->query($sql2);
 $countS = $sth2->fetchAll();
 
 foreach ($countS as $row2){
-     if($row2['nbrS']==0){ 
-      $search=false;
-     }
-      //  else $search=true;
-    
-    } 
+   if($row2['nbrS']==0){ 
+    $search=false;
+   }
+    //  else $search=true;
+  
+  } 
+
+$sql4 = "SELECT COUNT(*) as nbrC FROM `commentaires`";
+//Recherche des données
+$sth4 = $cnx->query($sql4);
+$countC = $sth4->fetchAll();
+
+foreach ($countC as $row4){
+   if($row4['nbrC']==0){ 
+    $commentaire=false;
+   }
+    //  else $search=true;
+  
+  } 
+
+
 
 ?>
 
@@ -239,6 +263,31 @@ foreach ($countS as $row2){
                }?>
            </h3></center> <br>
       </div>
+      <?php if($commentaire==true) { ?>
+      <center><div style="width: 16cm; border:black solid 1px"></div> <br> <br></center>
+      <center> <h3 style="color:  #0082e6">Les ticket traiter par les consultants</h3></center>
+
+      <table class="T1" style="margin-left:18px" >
+            <tr class="TR1">
+               <th>Identifiant ticket</th>
+               <th>Feedback</th>
+               <th>Utilisateur</th>
+               <th>Consultant</th>
+            </tr>
+            
+         <?php foreach ($result3 as $row3){ ?>
+            <tr>
+                
+               <th class="th1">#<?php echo $row3['id'] ?></th>
+               <th class="th1"><?php echo $row3['commentaire'] ?></th>
+               <th class="th1"><?php echo $row3['utilisateur'] ?></th>
+               <th class="th1"><?php echo $row3['consultant'] ?></th>
+
+         <?php } ?>
+          </table> 
+          <?php }?>
+           <br> 
+      
 
 
    </div> 
