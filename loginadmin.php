@@ -1,3 +1,11 @@
+<!-- <?php
+  session_start();
+  if($_SESSION['admin']){
+   header('location: pageadmin.php');
+  } 
+
+?> -->
+
 
 <!DOCTYPE html>
 <html lang="en">

@@ -1,3 +1,11 @@
+<!-- <?php
+  session_start();
+  if($_SESSION['consultant']){
+   header('location: pageconsultant.php');
+  } 
+
+?> -->
+
 
 <!DOCTYPE html>
 <html lang="en">

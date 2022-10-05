@@ -1,9 +1,9 @@
-<?php 
-// session_start();
-// if($_SESSION['utilisateur']){ 
-//   header('location:ticket.php');
-// }
-?>
+<!-- <?php 
+session_start();
+if($_SESSION['utilisateur']){ 
+  header('location:ticket.php');
+}
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">

@@ -2,7 +2,7 @@
 
 $username="root"; 
   
-$pass="root";
+$pass="ZAKARIA2001";
  
 $host="localhost"; 
     

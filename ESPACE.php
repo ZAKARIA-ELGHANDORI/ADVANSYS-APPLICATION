@@ -48,14 +48,14 @@
       <th id="th1"> 
         
       <div class="btn" id="">
-      <a href="login.php">
+      <a href="ticket.php">
       <input type="button" value=" ESPACE CLIENTS" class="btn1"></a>
       </div>
       </th>
 
       <th id="th1"> 
       <div class="btn" id="">
-      <a href="loginadmin.php">
+      <a href="pageadmin.php">
       <input type="button" value="ESPACE ADMINISTRATEUR" class="btn1"></a>
       </div>
       </th>
@@ -63,7 +63,7 @@
 
        <th id="th1">
       <div class="btn" id="">
-      <a href="loginconsultant.php">
+      <a href="pageconsultant.php">
       <input type="button" value="ESPACE CONSULTANT" class="btn1"></a>
       </div>
       </th>
