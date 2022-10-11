@@ -1,3 +1,24 @@
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 2cm;
+    margin-left: 2cm;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
 *{ 
     padding: 0px;
     margin:0px;
@@ -161,10 +182,10 @@ a.active,a:hover{
     border-radius: 9px;
     background-color: #dadada;
     display: inline-block;
-    width: 8cm;
+    width: 7cm;
     height: 7cm;
-    margin-left: 3cm;
-    transition: width 1.2s;
+    margin-left: 2.3cm;
+    transition: width 1s;
 }
 
 .div1:hover{
@@ -187,7 +208,7 @@ a.active,a:hover{
 }
 #div3{
     display: inline-block;
-    margin-left: 2cm;
+    margin-left: 1cm;
 }
 .div4{ 
     background-color: #d0d0d0;
@@ -208,7 +229,7 @@ a.active,a:hover{
 #btn1:hover{ 
     background-color: #0082e6;
 }
-#div5{ 
+.div5{ 
     height: 7.3cm;
     background-color: #0082e6;
 
@@ -239,7 +260,7 @@ a.active,a:hover{
 .div8{ 
     width: 8cm;
     height: 7cm;
-    margin-left: 110px;
+    /* margin-left: 110px; */
     padding: 19px ;
     margin-top: 1cm;
     border-radius: 10px;

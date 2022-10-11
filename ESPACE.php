@@ -17,8 +17,8 @@
      </form>
 
     </div> -->
-    <center>
-        <table>
+    
+        <table class="container">
             <tr>
     <div class="div1">
         <th>
@@ -76,7 +76,7 @@
 
     </div>
     </table>
-    </center>
+
     
 </body>
 </html>

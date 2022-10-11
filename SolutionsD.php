@@ -39,7 +39,7 @@
            </nav> <br><br> <br> 
         </div>
         <?php foreach ($result as $row){ ?>
-       <div  class="div1">
+       <div  class="container" style="background-color: rgb(235, 234, 234); padding-bottom:1cm">
            <div class="div2">
            <h2 style="font-size: 50px; color:#0082e6;" id="titre"><?php echo $row['titre'] ?></h2> <br>
            <p id="titreD" style="line-height: 24px; color:rgb(87, 85, 85); font-size: 18px;">
@@ -57,26 +57,32 @@
        <div class="div4" id="titretexte">
          <center><h2 style="font-size: 44px; color:#0082e6; margin:1.9cm" > <?php echo $row['titretexte'] ?>
          </h2> <br></center>
-       </div> <br> <br>
-
-       <div class="div5" id="texte">
+       </div> 
+        
+       <div style="margin:2cm">
+       <div class="container" id="texte">
        <p style="line-height: 24px; color:rgb(87, 85, 85); font-size: 18px;">
        <?php echo $row['texte'] ?> <br> <br>
             </p>
        </div>
+       </div>
 
-       <div class="div6" id="imagetexte">
+       <div style="margin-right:87%">
+       <div class="container" id="imagetexte">
        <center style="margin-left:50% ">
        <img src="./IMGS/<?php echo $row['imagetexte'] ?>" alt="" class="img1" style="width:15.4cm ; height:14cm">
        </center>  
-       </div> <br> <br> <br>
+       </div> </div>
+       <br> <br> <br>
 
-        <div class="div5">
+        <div style="margin:2cm">
+        <div class="container">
         <p id="titreD" style="line-height: 24px; color:rgb(87, 85, 85); font-size: 18px;">
            <?php echo $row['information'] ?> <br> <br>
             </p>
             
-        </div> <br> <br> <br>
+        </div></div>
+         <br> <br> <br>
         <?php } ?>
 
 

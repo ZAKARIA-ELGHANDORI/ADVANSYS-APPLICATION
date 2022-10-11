@@ -1,3 +1,24 @@
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 2cm;
+    margin-left: 2cm;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
 *{ 
     padding: 0px;
     margin:0px;
@@ -114,7 +135,7 @@ a.active,a:hover{
     background-size: cover ;
     margin-left: 3cm;
     margin-bottom: 0;
-    width: 14cm;
+    width: 11cm;
     height: 9cm;
 }
 .engacontainer{ 
@@ -183,6 +204,7 @@ a.active,a:hover{
     display:flex;
     justify-content: center;
     align-items:center;
+  
     
     
     

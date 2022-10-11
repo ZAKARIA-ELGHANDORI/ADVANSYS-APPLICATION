@@ -220,6 +220,27 @@ th:hover{
    background-color: #cae8ff;
    border: 1px solid black;
 }
+.container {
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 2cm;
+    margin-left: 2cm;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
 
     </style>
 </head>
