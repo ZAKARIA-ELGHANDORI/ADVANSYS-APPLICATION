@@ -1,8 +1,8 @@
 <!-- <?php
   session_start();
-  if($_SESSION['admin']){
-   header('location: pageadmin.php');
-  } 
+  // if($_SESSION['admin']){
+  //  header('location: pageadmin.php');
+  // } 
 
 ?> -->
 

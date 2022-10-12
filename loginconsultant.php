@@ -1,8 +1,8 @@
 <!-- <?php
   session_start();
-  if($_SESSION['consultant']){
-   header('location: pageconsultant.php');
-  } 
+  // if($_SESSION['consultant']){
+  //  header('location: pageconsultant.php');
+  // } 
 
 ?> -->
 
