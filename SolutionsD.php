@@ -39,7 +39,7 @@
            </nav> <br><br> <br> 
         </div>
         <?php foreach ($result as $row){ ?>
-       <div  class="container" style="background-color: rgb(235, 234, 234); padding-bottom:1cm">
+       <div  class="containe" style="background-color: rgb(235, 234, 234); padding-bottom:1cm">
            <div class="div2">
            <h2 style="font-size: 50px; color:#0082e6;" id="titre"><?php echo $row['titre'] ?></h2> <br>
            <p id="titreD" style="line-height: 24px; color:rgb(87, 85, 85); font-size: 18px;">
@@ -60,7 +60,7 @@
        </div> 
         
        <div style="margin:2cm">
-       <div class="container" id="texte">
+       <div class="containe" id="texte">
        <p style="line-height: 24px; color:rgb(87, 85, 85); font-size: 18px;">
        <?php echo $row['texte'] ?> <br> <br>
             </p>
@@ -68,7 +68,7 @@
        </div>
 
        <div style="margin-right:87%">
-       <div class="container" id="imagetexte">
+       <div class="containe" id="imagetexte">
        <center style="margin-left:50% ">
        <img src="./IMGS/<?php echo $row['imagetexte'] ?>" alt="" class="img1" style="width:15.4cm ; height:14cm">
        </center>  
